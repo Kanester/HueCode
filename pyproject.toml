@@ -25,3 +25,6 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/Kanester"
 Repository = "https://github.com/Kanester/HueCode"
+
+[project.scripts]
+huecode = "HueCode.cli:cli_entry"
