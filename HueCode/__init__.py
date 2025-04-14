@@ -1,11 +1,11 @@
 """HueCode: An encoder that turns text into image and decode image to text using RGB channels"""
 
-__version__ = "0.1.0"
+__version__ = "1.0.1"
 
 from .encoder import Encrypt
 from .decoder import Decrypt
 
-def encrypt(data, path, filename):
+def encrypt(data, path=None, filename=None):
   Encrypt(data, path, filename).createImg()
   return
   

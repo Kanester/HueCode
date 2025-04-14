@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw
 import base64, math, os
 
 class Encrypt:
-  def __init__(self, data, path=None, filename=None):
+  def __init__(self, data, path, filename):
     self.path = path
     if self.path is None:
       self.path = os.getcwd()
