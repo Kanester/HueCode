@@ -13,14 +13,10 @@ A simple, fun project built out of curiosity in just a week.
 
 ## Installation
 
-To install this mess, download the compiled Python package (you can choose between the tarball or wheel), then run:
+To install this mess, download the compiled Python package, then run:
 
 ```bash
-# For tarball
 pip install huecode-<version>.tar.gz
-
-# For wheel
-pip install huecode-<version>-py2.py3-none-any.whl
 ```
 
 Dependencies: It only needs [Pillow](https://python-pillow.github.io/) to work.
