@@ -27,12 +27,13 @@ Mhm... I dunno, just use it for anything you like. It doesn’t have a concrete 
 So—yeah, do whatever you want. Here's an example of how to use it:
 
 ```python
-from huecode import encode, decode
+from HueCode import encode, decode
 
 # Encoding your message into an image
+# Default value:
+# path: os.getcwd()
+# filename: output.png
 encode("Hello, world!", path="/path/to/file/", filename="filename.png")
-
-# Default value of path is the current working directory and the default filename is "output.png"
 
 # Decoding the message from the image
 message = decode("output.png")

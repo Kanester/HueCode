@@ -1,6 +1,6 @@
 """HueCode: An encoder that turns text into image and decode image to text using RGB channels"""
 
-__version__ = "1.0.1"
+__version__ = "1.0.0"
 
 from .encoder import Encrypt
 from .decoder import Decrypt
