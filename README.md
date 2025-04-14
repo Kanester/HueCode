@@ -1,15 +1,15 @@
 # HueCode
 
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Status](https://img.shields.io/badge/status-experimental-orange)
+![Made with](https://img.shields.io/badge/made%20with-curiosity-ff69b4)
+
 A simple, fun project built out of curiosity in just a week.
 
 **HueCode** is a steganography system that uses the RGB color channel to **encrypt** and **decrypt** data in visual form.
 
 > [!NOTE]
 > **Disclaimer:** This is just a personal experimental project created by a Senior High School ABM student.
-
-![License](https://img.shields.io/badge/license-MIT-blue)
-![Status](https://img.shields.io/badge/status-experimental-orange)
-![Made with](https://img.shields.io/badge/made%20with-curiosity-ff69b4)
 
 ## Installation
 
