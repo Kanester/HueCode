@@ -4,7 +4,7 @@ A simple, fun project built out of curiosity in just a week.
 
 **HueCode** is a steganography system that uses the RGB color channel to **encrypt** and **decrypt** data in visual form.
 
-> [!DISCLAIMER]
+> [!NOTE]
 > **Disclaimer:** This is just a personal experimental project created by a Senior High School ABM student.
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
