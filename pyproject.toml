@@ -22,7 +22,7 @@ classifiers = [
     "Topic :: Security :: Cryptography",
     "Topic :: Multimedia :: Graphics"
 ]
-urls = {
-  "Homepage" = "https://github.com/Kanester",
-  "Repository" = "https://github.com/Kanester/HueCode"
-}
+
+[project.urls]
+Homepage = "https://github.com/Kanester"
+Repository = "https://github.com/Kanester/HueCode"
