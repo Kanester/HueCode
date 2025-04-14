@@ -4,6 +4,7 @@ A simple, fun project built out of curiosity in just a week.
 
 **HueCode** is a steganography system that uses the RGB color channel to **encrypt** and **decrypt** data in visual form.
 
+> [!DISCLAIMER]
 > **Disclaimer:** This is just a personal experimental project created by a Senior High School ABM student.
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
@@ -33,7 +34,9 @@ So—yeah, do whatever you want. Here's an example of how to use it:
 from huecode import encode, decode
 
 # Encoding your message into an image
-encode("Hello, world!", output_path="output.png")
+encode("Hello, world!", path="/path/to/file/", filename="filename.png")
+
+# Default value of path is the current working directory and the default filename is "output.png"
 
 # Decoding the message from the image
 message = decode("output.png")
@@ -42,4 +45,5 @@ print(message)  # → Hello, world!
 
 ## Contributing
 
-Please help me make this mess useful (╥﹏╥) plz
+Please help me make this mess useful
+(╥﹏╥) plz
