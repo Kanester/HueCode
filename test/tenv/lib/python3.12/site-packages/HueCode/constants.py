@@ -12,8 +12,7 @@ class constants(Enum):
     "B": 140
   }
   
-  metadata = '''{
-  {
+  metadata = '''{{
     "version": {version},
     "metadata": {
       "Title": "{title}",
@@ -31,5 +30,4 @@ class constants(Enum):
       "data": "{data}",
       "checksum": "{checksum}"
     }
-  }
-  }'''
+  }}'''

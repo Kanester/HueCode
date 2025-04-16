@@ -14,20 +14,20 @@ class constants(Enum):
   
   metadata = '''{{
     "version": {version},
-    "metadata": {
+    "metadata": {{
       "Title": "{title}",
       "Description": "{desc}",
       "Author": "KanesterP-HC-v1",
       "Date": "{date}"
-    },
+    }},
 
-    "image": {
-      "pixels": {
+    "image": {{
+      "pixels": {{
         "height": {height},
         "width": {height},
         "mode": "RGB"
-      },
+      }},
       "data": "{data}",
       "checksum": "{checksum}"
-    }
+    }}
   }}'''
