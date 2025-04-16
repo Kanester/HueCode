@@ -5,17 +5,11 @@ import base64, math, os, zlib, hashlib
 
 class Encrypt:
   def __init__(self, data, path, filename, title, desc):
-    self.path = path
-    if self.path is None:
-      self.path = os.getcwd()
-    
-    self.filename = filename
-    if self.filename is None:
-      self.filename = "output.png"
-    
+    self.path = path if path is not None else os.getcwd()
+    self.filename = filename if filename is not None else "output.png"
+    self.title = title if title is not None else "HueCode"
+    self.desc = desc if desc is not None else "No description."
     self.data = data
-    self.title = title
-    self.desc = desc
     self.SCALE = constants.SF.value
     self.COLORB = constants.BC.value
     self.COLORF = constants.CF.value
