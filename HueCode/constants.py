@@ -11,3 +11,25 @@ class constants(Enum):
     "G": 80,
     "B": 140
   }
+  
+  metadata = '''
+  {
+    "version": 1,
+    "metadata": {
+      "Title": "{title}",
+      "Description": "{desc}",
+      "Author": "KanesterP-HC-v1",
+      "Date": "{date}"
+    },
+
+    "image": {
+      "pixels": {
+        "height": {height},
+        "width": {height},
+        "mode": "RGB"
+      },
+      "data": "{data}",
+      "checksum": "{checksum}"
+    }
+  }
+  '''

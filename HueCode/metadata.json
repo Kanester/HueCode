@@ -5,9 +5,8 @@
 		"Description": "",
 		"Keyword": [],
 		"Tags": [],
-		"Author": "KanesterP-HC-version",
-		"Date": "",
-		"Location": ""
+		"Author": "KanesterP-HC-<version>",
+		"Date": ""
 	},
 	
 	"image": {
@@ -16,6 +15,7 @@
 	    "width": 0,
 	    "mode": "RGB"
 	  },
-	  "data": ""
+	  "data": "",
+	  "checksum": ""
 	}
 }
