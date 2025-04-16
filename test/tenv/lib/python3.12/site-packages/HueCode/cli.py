@@ -1,39 +1,43 @@
-from .encoder import Encrypt
-from .decoder import Decrypt
 import argparse
-
-class Main(Encrypt, Decrypt):
-  def __init__(self, data=None, path=None, filename=None):
-    self.data = data
-    if not self.data:
-      print("Please input a proper data!")
-    
-    self.path = path
-    self.file = filename
-      
-  def encrypt(self):
-    Encrypt(self.data, self.path, self.file).createImg()
-  
-  def decrypt(self):
-    return Decrypt(self.data).decrypt()
+from HueCode import Encrypt, Decrypt  # Assumes they're exposed in __init__.py
 
 def cli_entry():
-  parser = argparse.ArgumentParser(description="Encode data to image using RGB values and decode it back")
-  parser.add_argument("action", choices=["encrypt", "decrypt"])
-  help = "Action to perform: encrypt & decrypt"
-  parser.add_argument("data", type=str, help="The given data should be any strings, integers, or mixed; it should be supported by the standard ASCII table")
-  
-  #For argvs
-  args = parser.parse_args()
-  cipher = Main(args.data)
-  
-  if args.action == "encrypt":
-    cipher.encrypt()
-    print("done!")
-    
-  if args.action == "decrypt":
-    decrypted = cipher.decrypt()
-    print(decrypted)
+    parser = argparse.ArgumentParser(
+        description="Encode data to an image using RGB values and decode it back"
+    )
+
+    parser.add_argument("action", choices=["encrypt", "decrypt"], help="Action to perform")
+    parser.add_argument("data", type=str, help="Data to encrypt or decrypt")
+    parser.add_argument("--path", type=str, default=None, help="Optional path to save the output image")
+    parser.add_argument("--filename", type=str, default=None, help="Optional filename for the output image")
+    parser.add_argument("--title", type=str, default="Untitled", help="Optional title metadata for the image")
+    parser.add_argument("--desc", type=str, default="No description", help="Optional description metadata")
+
+    args = parser.parse_args()
+
+    if args.action == "encrypt":
+        if not args.data:
+            print("Error: No data provided to encrypt.")
+            return
+
+        encryptor = Encrypt(
+            data=args.data,
+            path=args.path,
+            filename=args.filename,
+            title=args.title,
+            desc=args.desc
+        )
+        encryptor.createImg()
+        print("Encryption complete.")
+
+    elif args.action == "decrypt":
+        if not args.data:
+            print("Error: No data provided to decrypt.")
+            return
+
+        decrypted = Decrypt(args.data).decrypt()
+        print("Decryption result:")
+        print(decrypted)
 
 if __name__ == "__main__":
-  cli_entry()
+    cli_entry()
