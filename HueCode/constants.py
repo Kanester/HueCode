@@ -14,7 +14,7 @@ class constants(Enum):
   
   metadata = '''
   {
-    "version": 1,
+    "version": {version},
     "metadata": {
       "Title": "{title}",
       "Description": "{desc}",
