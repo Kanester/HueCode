@@ -1,0 +1,21 @@
+{
+  "version": 1,
+	"metadata": {
+		"Title": "",
+		"Description": "",
+		"Keyword": [],
+		"Tags": [],
+		"Author": "KanesterP-HC-version",
+		"Date": "",
+		"Location": ""
+	},
+	
+	"image": {
+	  "pixels": {
+	    "height": 0,
+	    "width": 0,
+	    "mode": "RGB"
+	  },
+	  "data": ""
+	}
+}

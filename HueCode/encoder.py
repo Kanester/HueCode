@@ -1,6 +1,6 @@
 from .constants import constants
 from PIL import Image, ImageDraw
-import base64, math, os
+import base64, math, os, zlib
 
 class Encrypt:
   def __init__(self, data, path, filename):
@@ -33,7 +33,7 @@ class Encrypt:
     rgb_values = []
     rgb = [0,0,0]
     chnnx = 0
-      
+    
     base85data = self.ToBase85()
 
     for chnx in base85data:
@@ -77,3 +77,4 @@ class Encrypt:
       path = os.path.join(self.path, self.filename)
       
       image.save(path)
+      print(zlib.__doc__)
